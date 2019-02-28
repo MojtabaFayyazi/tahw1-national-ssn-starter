@@ -32,7 +32,7 @@ public class SolutionTest {
         assertFalse(NationalIDDetector.isValidID("9324873")); 
         assertFalse(NationalIDDetector.isValidID("9652487332323233")); 
         assertFalse(NationalIDDetector.isValidID("96873")); 
-        assertTrue(NationalIDDetector.isValidID("0018932512")); 
+        assertFalse(NationalIDDetector.isValidID("0018932512")); 
         assertFalse(NationalIDDetector.isValidID("00001")); 
         System.err.println("$$$GRADER$$$ | { type:\"SCORE\" , amount:5 , reason:\"Test Passed.\" } | $$$GRADER$$$" );
     }
